@@ -1,0 +1,226 @@
+h3 {
+  font-size: 40px;
+  color: inherit;
+  font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+  margin: 0 10px;
+}
+
+h2 {
+  font-size: 20px;
+  color: inherit;
+  font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+  margin: 10px;
+}
+
+body {
+  margin: 0;
+  background-color: #212529;
+  color: white;
+}
+
+.container,
+.scoreboard,
+.add-btn {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 auto;
+}
+
+.container div,
+.add-btn div {
+  display: flex; /* Added display flex for consistency */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 33.33%;
+  margin: 0 auto;
+}
+
+.scoreboard div {
+  display: flex; /* Added display flex for consistency */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 33.33%;
+  margin: 20px auto;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.shot-clock-box,
+.timer-box,
+.scoreboard-box,
+.period-box,
+.foul-box {
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: #080001;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  color: #ea2f14;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  padding: 25px 25px 10px 25px;
+  margin: 0 auto;
+}
+
+.timer-box,
+.shot-clock-box {
+  font-size: 80px;
+  margin: 10px auto;
+}
+
+.shot-clock-box {
+  width: 150px;
+}
+
+.timer-box {
+  width: 300px;
+}
+
+.timer-title {
+  color: inherit;
+  font-family: "Verdana", "Geneva", "Tahoma", sans-serif;
+  font-size: 50px;
+  margin: 10px;
+}
+
+.m-10 {
+  margin: 10px;
+}
+
+.m-15 {
+  margin: 15px;
+}
+
+.ml-20 {
+  margin-left: 20px;
+}
+.mr-20 {
+  margin-right: 20px;
+}
+
+.m-20 {
+  margin: 20px;
+}
+
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.scoreboard-box,
+.period-box {
+  justify-content: center;
+  color: #fcbf49;
+}
+.scoreboard-box {
+  font-size: 100px;
+}
+
+.period-box,
+.foul-box {
+  font-size: 80px;
+  width: 120px;
+  justify-content: center;
+  padding: 20px;
+  margin: 10px;
+}
+
+.btn {
+  font-size: 20px;
+  border: 1px solid white;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 12px;
+  font-family: "Cursed Timer ULiL", sans-serif;
+  color: inherit;
+  background-color: inherit;
+  cursor: pointer;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: #fcbf49;
+}
+
+.btn:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+img {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%; /* Changed to 50% for a perfect circle */
+  background-size: cover; /* Ensures the image covers the entire area */
+  display: block; /* Ensures the image is treated as a block element */
+}
+
+.img-colored {
+  background-image: url("../img/basketball-colored.png");
+  border: 2px solid #fcbf49;
+}
+.img-bnw {
+  background-image: url("../img/basketball-bnw.png");
+  border: 2px solid #22333b;
+}
+img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  background-image: url("../img/basketball-colored.png");
+  border: 2px solid #fcbf49;
+}
+.active {
+  border: 1px solid #fcbf49;
+  font-weight: bold;
+}
+
+.inline-flex {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-content-start {
+  justify-content: start;
+}
+
+.w-120px {
+  width: 120px;
+}
+
+.justify-content-space-around {
+  justify-content: space-around;
+}
+
+#basketball-button {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#basketball-button.active {
+  background-color: #ffcc00; /* Active color */
+  color: black;
+}

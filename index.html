@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basketball Scoreboard</title>
+    <link rel="stylesheet" href="./css/index.css" />
+    <link
+      href="https://fonts.cdnfonts.com/css/cursed-timer-ulil"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="text-align-center">
+      <h1 class="timer-title">TIMER</h1>
+      <p id="time-clock" class="timer-box">12:00</p>
+    </div>
+
+    <div class="container">
+      <div>
+        <h3>HOME</h3>
+      </div>
+      <div></div>
+      <div>
+        <h3>GUEST</h3>
+      </div>
+    </div>
+
+    <div class="scoreboard">
+      <div id="scoreboard-box-home" class="">
+        <span id="home-score" class="scoreboard-box">00</span>
+      </div>
+      <div>
+        <span id="period-box" class="period-box">01</span>
+      </div>
+      <div id="scoreboard-box-guest">
+        <span id="guest-score" class="scoreboard-box">00</span>
+      </div>
+    </div>
+
+    <div class="add-btn mb-40">
+      <div>
+        <span class="home">
+          <button id="home1" class="btn">+1</button>
+          <button id="home2" class="btn">+2</button>
+          <button id="home3" class="btn">+3</button>
+        </span>
+      </div>
+      <div class=""><h3>Period</h3></div>
+      <div>
+        <span class="guest">
+          <button id="guest1" class="btn">+1</button>
+          <button id="guest2" class="btn">+2</button>
+          <button id="guest3" class="btn">+3</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="container mt-20 mb-20">
+      <div>
+        <h3 id="">Foul</h3>
+      </div>
+      <div>
+        <h3>SHOT CLOCK</h3>
+      </div>
+      <div>
+        <h3 id="">Foul</h3>
+      </div>
+    </div>
+
+    <div class="container mt-20">
+      <div>
+        <span id="foul-home-el" class="inline-flex foul-box">00</span>
+      </div>
+      <div>
+        <span class="inline-flex">
+          <span class="mr-20"><img id="home-ball" alt="" /></span>
+          <p id="shot-clock" class="shot-clock-box">24</p>
+          <span class="ml-20"><img id="guest-ball" alt="" /></span>
+        </span>
+      </div>
+      <div>
+        <span id="foul-guest-el" class="inline-flex foul-box">00</span>
+      </div>
+    </div>
+
+    <div class="add-btn">
+      <div>
+        <span>
+          <button id="foul-home" class="btn">+1</button>
+        </span>
+      </div>
+      <div class="mt-20">
+        <span>
+          <button id="newgame" onclick="newGame()" class="btn">NEW GAME</button>
+        </span>
+      </div>
+      <div>
+        <span>
+          <button id="foul-guest" class="btn">+1</button>
+        </span>
+      </div>
+    </div>
+
+    <script src="./js/index.js"></script>
+  </body>
+</html>
