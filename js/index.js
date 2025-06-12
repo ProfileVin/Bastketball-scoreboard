@@ -64,7 +64,7 @@ const gameIntervalPerPeriod = 720;
 const isGameOver = () => currentGamePeriod === 4 || !isGameStarted;
 
 const updateScore = (isHome, points) => {
-  console.log(isGameOver());
+ 
   if (isGameOver()) return;
 
   const team = isHome ? "home" : "guest";
@@ -87,6 +87,13 @@ const updateFoul = (isHome) => {
 };
 
 const toggleScoreBoxBorder = () => {
+  const isEqualScores =
+    totalScores.home === totalScores.guest;
+  if (isEqualScores) {
+    scores.home.classList.remove("active");
+    scores.guest.classList.remove("active");
+    return;
+  }
   const isHomeLeading = totalScores.home > totalScores.guest;
   scores.home.classList.toggle("active", isHomeLeading);
   scores.guest.classList.toggle("active", !isHomeLeading);
